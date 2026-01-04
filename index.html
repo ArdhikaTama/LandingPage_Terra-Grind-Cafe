@@ -6,6 +6,10 @@
     <title>Brew & Bites Cafe</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- header & navigation -->
@@ -40,6 +44,418 @@
         </div>
      </header>
 
-     
+     <!-- hero section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Pengalaman Kopi Terbaik</h1>
+                <p>Racikan spesial dengan bahan premium, disajikan dengan penuh cinta di setiap cangkir. Nikmati suasana nyaman dan hangat bersama teman dan keluarga</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn">Lihat Menu</a>
+                    <a href="#reservation" class="btn btn-secondary">Reservasi Meja</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular menu section -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Populer</h2>
+                <p>Pilihan Favorit pelanggan kami</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu item 1 -->
+                <div class="menu-card">
+                    <img src="image/download.jpeg" alt="special terra coffee" class="menu-img">
+                    <div class="menu-content">
+                        <h3>Special Terra coffee</h3>
+                        <p>Kopi racikan khusus dengan biji pilihan dari daerah tinggi,diseduh dengan metode manual terra untuk rasa yang optimal.</p>
+                        <div class="menu-price">Rp 35.000</div>
+                        <button class="btn order-btn" data-item="Special Terra coffee">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- menu item 2 -->
+                <div class="menu-card">
+                    <img src="image/download.jpeg" alt="avocado toast" class="menu-img">
+                    <div class="menu-content">
+                        <h3>avocado toast</h3>
+                        <p>roti gandum panggang dengan alpukat tumbuk, telur poached, dan taburan biji wijen. Sempurna untuk sarapan sehat</p>
+                        <div class="menu-price">Rp 45.000</div>
+                        <button class="btn order-btn" data-item="avocado toast">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- menu item 3 -->
+                <div class="menu-card">
+                    <img src="image/download.jpeg" alt="matcha latte" class="menu-img">
+                    <div class="menu-content">
+                        <h3>Matcha Latte</h3>
+                        <p>Matcha Premium asal jepang disajikan dengan susu oat pilihan. Nikmati rasa earchy yang khas dengan sentuhan manis alami</p>
+                        <div class="menu-price">Rp 20.000</div>
+                        <button class="btn order-btn" data-item="matcha latte">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- statistik section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Terra Grind Caffe dalam angka</h2>
+                <p>kepercayaan pelanggan membuat kami terus berkembang</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number" id="customerCount">0</div>
+                    <div class="stat-text">Pelanggan setia</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number" id="coffeeCount">0</div>
+                    <div class="stat-text">Cangkir Kopi Terjual</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number" id="menuCount">0</div>
+                    <div class="stat-text">Item Menu</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number" id="yearsCount">0</div>
+                    <div class="stat-text">Tahun Berpengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>Cerita di balik secangkir secangkir kopi terbaik</p>
+            </div>
+
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="image/download.jpeg" alt="interior terra grind coffee" style="width: 100%; border-radius: 10px;">
+                </div>
+
+                <div class="about-text">
+                    <h3>Sejak 2020, Menyajikan kebahagiaan dalam setiap cangkir</h3>
+                    <p>Terra Grind coffee didirikan dengan misi sederhana: menghadirkan pengalaman ngopi terbaik dengan kualitas terbaik. Kami percaya bahwa secangkir kopi yang baik dapat menghubungkan orang-orang dan menciptakan momen berharga.</p>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div>
+                                <h4>Kopi Organik</h4>
+                                <p>Biji kopi pilihan dari petani lokal yang berkelanjutan</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <div>
+                                <h4>Pastry Segar</h4>
+                                <p>Dibuat fresh setiap hari dengan bahan premium</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div>
+                                <h4>Wifi Gratis</h4>
+                                <p>Koneksi internet cepat untuk bekerja dan bersantai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#reservation" class="btn">Kunjungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hours section -->
+    <section class="section" id="hours">
+        <div class="container">
+            <div class="section-title">
+                <h2>Jam Operasional</h2>
+                <p>Kami siap menyambut anda</p>
+            </div>
+
+            <div class="hours-container">
+                <table class="hours-table" id="hoursTable">
+                    <thead>
+                        <tr>Hari</tr>
+                        <tr>Jam Buka</tr>
+                    </thead>
+                    <tbody>
+                        <tr data-day="Monday">
+                            <td>Senin</td>
+                            <td>07:00 - 22:00</td>
+                        </tr>
+                        <tr data-day="Tuesday">
+                            <td>Selasa</td>
+                            <td>07:00 - 22:00</td>
+                        </tr>
+                        <tr data-day="Wednesday">
+                            <td>Rabu</td>
+                            <td>07:00 - 22:00</td>
+                        </tr>
+                        <tr data-day="Thursday">
+                            <td>Kamis</td>
+                            <td>07:00 - 22:00</td>
+                        </tr>
+                        <tr data-day="Friday">
+                            <td>Jumat</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr data-day="Saturday">
+                            <td>Sabtu</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr data-day="Sunday">
+                            <td>Minggu</td>
+                            <td>07:00 - 22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="section testimonial-section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimoni Pelanggan</h2>
+                <p>Apa kata mereka tentang Terra Grind Cafe</p>
+            </div>
+
+            <div class="testimonial-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <!-- testimonial 1 -->
+                     <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <img src="image/download.jpeg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Kopi di sini memang spesial! Rasanya rich dan aroma-nya menggugah selera. Tempatnya nyaman banget buat nongkrong atau kerja. Pelayannya juga ramah. Sudah jadi langganan sejak mereka buka!"</p>
+                            <p class="testimonial-author">- Sarah Wijaya</p>
+                        </div>
+                     </div>
+
+                     <!-- testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <img src="image/download.jpeg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Avocado Toast-nya juara! Rotinya crunchy, alpukatnya fresh, dan telurnya perfectly poached. Tempat kerja favorit saya karena Wi-Fi-nya cepat dan ada banyak colokan. Recommended banget!"</p>
+                            <p class="testimonial-author">- Andi Wijaya</p>
+                        </div>
+                    </div>
+
+                    <!-- testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <img src="image/download.jpeg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Matcha Latte-nya authentic banget! Tidak terlalu manis dan rasa matcha-nya terasa kuat. Suasana cafe-nya cozy dengan dekorasi yang instagramable. Perfect buat meeting atau sekadar ngopi santai."</p>
+                            <p class="testimonial-author">- Maya Sari</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonal 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <img src="image/download.jpeg" alt="Customer" class="testimonial">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Tempat favorit buat kumpul sama teman. Kopinya konsisten enak, menu makanan bervariasi, dan harganya reasonable. Pelayanan cepat dan staffnya selalu senyum. Bakal balik lagi terus!"</p>
+                            <p class="testimonial-author">- Rizky Darmawan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="slider-dots" id="slider-dots">
+
+                    </div>
+
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reservation section -->
+    <section class="section" id="reservation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Reservasi Meja</h2>
+                <p>Pastikan tempat duduk anda dengan reservasi online</p>
+            </div>
+
+            <div class="reservation-form">
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nama Lengkap* </label>
+                            <input type="text" id="name" class="form-input" placeholder="masukkan nama Anda">
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" id="email" class="form-input" placeholder="masukkan email anda">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" class="form-label">Tanggal Reservasi*</label>
+                            <input type="date" id="date" class="form-input">
+                            <div class="error-message" id="dateError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="people" class="form-label">Jumlah Orang*</label>
+                            <select id="people" class="form-input">
+                                <option value="">Pilih Jumlah Orang</option>
+                                <option value="1">1 orang</option>
+                                <option value="2">2 orang</option>
+                                <option value="3">3 orang</option>
+                                <option value="4">4 orang</option>
+                                <option value="5">5 orang</option>
+                                <option value="6">6 orang</option>
+                                <option value="7">7 orang</option>
+                                <option value="8">8 orang</option>
+                                <option value="9">9 orang</option>
+                                <option value="10">10 orang</option>
+                            </select>
+                            <div class="error-message" id="peopleError"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan Khusus (Opsional)</label>
+                        <textarea id="message" class="form-input" rows="4" placeholder="permintaan khusus seperti meja dekat jendela,alergi makanan, dll"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" id="submitBtn" disabled>Reservasi Sekarang</button>
+
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i> Reservasi berhasil dikirim! Kami akan mengirimkan konfirmasi ke email Anda dalam waktu 24 jam.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Terra Grind Cafe</h3>
+                    <p>Pengalaman kopi terbaik dengan racikan spesial dan bahan premium. Tempat yang sempurna untuk bersantai, bekerja, atau berkumpul dengan teman.</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Kontak Kami</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i>Jl. Kopi Sejahtera no. 123,Jakarta</p>
+                    <p><i class="fas fa-phone"></i>+628123456789</p>
+                    <p><i class="fas fa-envelope"></i>hello@terragrindcafe.com</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Jam Buka</h3>
+                <div class="footer-contact">
+                    <p>Senin - Kamis: 07:00 - 22:00</p>
+                    <p>Jumat: 07:00 - 23:00</p>
+                    <p>Sabtu: 08:00 - 23:00</p>
+                    <p>Minggu: 08:00 - 22:00</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Lokasi</h3>
+                <div class="footer-map">
+                    <i class="fas fa-map-marked-alt"></i>Google Maps
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&TamaArdhika: Terra Grind Cafe. All right reserved </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- back to top buttom -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 </html>
